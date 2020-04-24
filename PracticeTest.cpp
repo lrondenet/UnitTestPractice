@@ -25,5 +25,19 @@ TEST(PracticeTest, is_not_a_palindrome)
 {
     Practice obj;
     bool actual = obj.isPalindrome("Ba");
-    ASSERT_TRUE(actual);
+    ASSERT_FALSE(actual);
+}
+
+
+TEST(PracticeTest, is_lessthan)
+{
+    Practice obj;
+    int x = 2,
+    int y = 1;
+    int z = 3;
+    obj.sortDescending(z,y,x);
+    ASSERT_LT(y,z);
+    ASSERT_LT(x,z);
+    ASSERT_LT(y,z);
+
 }
