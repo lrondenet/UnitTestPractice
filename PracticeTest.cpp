@@ -32,9 +32,9 @@ TEST(PracticeTest, is_not_a_palindrome)
 TEST(PracticeTest, is_lessthan)
 {
     Practice obj;
-    int one = 3,
-    int two = 2;
-    int three = 1;
+    // int one = 3,
+    // int two = 2;
+    // int three = 1;
     obj.sortDescending(one,two,three);
     ASSERT_LT(two,one);
     //ASSERT_LT(x,z);
