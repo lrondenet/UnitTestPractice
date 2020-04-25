@@ -40,7 +40,7 @@ TEST(PracticeTest, is_lessthan)
 TEST(PracticeTest, is_greaterthan)
 {
     Practice obj;
-    obj.sortortDescending(3,2,1);
+    obj.sortDescending(3,2,1);
     ASSERT_GT(3,1);
     ASSERT_GT(3,2);
 
