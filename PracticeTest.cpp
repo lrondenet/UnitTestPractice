@@ -33,7 +33,7 @@ TEST(PracticeTest, is_lessthan)
 {
     Practice obj;
     obj.sortDescending(3,2,1);
-    ASSERT_LT(2,1);
+    ASSERT_LT(1,3);
     
 }
 
@@ -43,5 +43,19 @@ TEST(PracticeTest, is_greaterthan)
     obj.sortDescending(3,2,1);
     ASSERT_GT(3,1);
     ASSERT_GT(3,2);
+}
+
+
+TEST(PracticeTest, is_equal)
+{
+    Practice obj;
+    int first = 3;
+    int second = 3;
+    int thirdd = 3;
+    obj.sortDescending(first,second,third);
+    ASSERT_EQ(first,second);
+    ASSERT_EQ(second,third);
 
 }
+
+
