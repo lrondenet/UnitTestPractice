@@ -57,7 +57,15 @@ TEST(PracticeTest, is_equal)
     Practice obj;
     obj.sortDescending(3,3,3);
     ASSERT_EQ(3,3);
+}
 
+
+TEST(PracticeTest, negativeintegers)
+{
+    Practice obj;
+    obj.sortDescending(-1,-2,-3);
+    ASSERT_LT(-3,-2);
+    ASSERT_LT(-2,-1);
 }
 
 
