@@ -28,11 +28,11 @@ TEST(PracticeTest, is_not_a_palindrome)
     ASSERT_FALSE(actual);
 }
 
-TEST(PracticeTest, not_a_palindrome)
+TEST(PracticeTest, a_palindrome)
 {
     Practice obj;
     bool actual = obj.isPalindrome("#$#");
-    ASSERT_FALSE(actual);
+    ASSERT_TRUE(actual);
 }
 
 TEST(PracticeTest, is_lessthan)
