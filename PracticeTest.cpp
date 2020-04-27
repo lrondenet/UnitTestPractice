@@ -72,45 +72,45 @@ TEST(PracticeTest, is_equalone)
 {
     Practice obj;
     int temp;
-    int first = 1;
-    int second = 2;
-    int thrid = 3;
+    int first = 3;
+    int second = 6;
+    int thrid = 5;
     obj.sortDescending(first, second, thrid);
-    ASSERT_LT(first, second);
+    ASSERT_LT(first, thrid);
     temp = first;
     ASSERT_EQ(temp, first);
-    first = second;
-    ASSERT_EQ(first, second);
-    second = temp;
-    ASSERT_EQ(second, temp);
-}
-
-TEST(PracticeTest, is_equaltwo)
-{
-    Practice obj;
-    int temp;
-    int first = 1;
-    int second = 2;
-    int thrid = 3;
-    obj.sortDescending(first, second, thrid);
-    ASSERT_LT(second, thrid);
-    temp = second;
-    ASSERT_EQ(temp, second);
-    second = thrid;
-    ASSERT_EQ(second, thrid);
+    first = thrid;
+    ASSERT_EQ(first, thrid);
     thrid = temp;
     ASSERT_EQ(thrid, temp);
 }
 
-TEST(PracticeTest, is_equalthree)
-{
-    Practice obj;
-    int first = 2;
-    int second = 1;
-    int thrid = 3;
-    obj.sortDescending(first, second, thrid);
+// TEST(PracticeTest, is_equaltwo)
+// {
+//     Practice obj;
+//     int temp;
+//     int first = 1;
+//     int second = 2;
+//     int thrid = 3;
+//     obj.sortDescending(first, second, thrid);
+//     ASSERT_LT(second, thrid);
+//     temp = second;
+//     ASSERT_EQ(temp, second);
+//     second = thrid;
+//     ASSERT_EQ(second, thrid);
+//     thrid = temp;
+//     ASSERT_EQ(thrid, temp);
+// }
 
-}
+// TEST(PracticeTest, is_equalthree)
+// {
+//     // Practice obj;
+//     // int first = 2;
+//     // int second = 1;
+//     // int thrid = 3;
+//     // obj.sortDescending(first, second, thrid);
+
+// }
 
 
 TEST(PracticeTest, negativeintegers)
