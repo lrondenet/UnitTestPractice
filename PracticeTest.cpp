@@ -108,7 +108,7 @@ TEST(PracticeTest, is_equalthree)
     int first = 2;
     int second = 1;
     int thrid = 3;
-    obj.sortDescending(first, second, three);
+    obj.sortDescending(first, second, thrid);
 
 }
 
