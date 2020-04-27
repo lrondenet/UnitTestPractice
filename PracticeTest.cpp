@@ -63,7 +63,7 @@ TEST(PracticeTest, is_equal)
     temp = first;
     ASSERT_EQ(temp, first);
     first = thrid;
-    ASSERT_EQ(first, temp);
+    ASSERT_EQ(first, thrid);
     thrid = temp;
     ASSERT_EQ(thrid, temp);
 
