@@ -54,8 +54,21 @@ TEST(PracticeTest, is_greaterthan)
 TEST(PracticeTest, is_equal)
 {
     Practice obj;
-    obj.sortDescending(3,2,1);
-    ASSERT_EQ(1,3);
+    int temp;
+    int first = 1;
+    int second = 2;
+    int thrid = 3;
+    obj.sortDescending(first, second, thrid);
+    ASSERT_LT(first, thrid);
+    temp = first;
+    ASSERT_EQ(temp, first);
+    first = thrid;
+    ASSERT_EQ(first, temp);
+    thrid = temp;
+    ASSERT_EQ(thrid, temp);
+
+    
+
 }
 
 
