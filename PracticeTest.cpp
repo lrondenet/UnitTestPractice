@@ -102,12 +102,15 @@ TEST(PracticeTest, is_equaltwo)
     ASSERT_EQ(thrid, temp);
 }
 
-// TEST(PracticeTest, is_equal)
-// {
-//     Practice obj;
-//     obj.sortDescending(3,3,3);
-//     ASSERT_EQ(3,3);
-// }
+TEST(PracticeTest, is_equalthree)
+{
+    Practice obj;
+    int first = 2;
+    int second = 1;
+    int thrid = 3;
+    obj.sortDescending(first, second, three);
+
+}
 
 
 TEST(PracticeTest, negativeintegers)
