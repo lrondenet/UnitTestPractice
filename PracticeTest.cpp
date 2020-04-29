@@ -40,7 +40,7 @@ TEST(PracticeTest, empty_string)
 {
     Practice obj;
     bool actual = obj.isPalindrome(" ");
-    ASSERT_TRUE(actual);
+    ASSERT_FALSE(actual);
 }
 
 
