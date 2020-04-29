@@ -35,12 +35,6 @@ TEST(PracticeTest, a_palindrome)
     ASSERT_TRUE(actual);
 }
 
-TEST(PracticeTest, a_palindrome)
-{
-    Practice obj;
-    bool actual = obj.isPalindrome("#$#");
-    ASSERT_TRUE(actual);
-}
 
 TEST(PracticeTest, empty_string)
 {
