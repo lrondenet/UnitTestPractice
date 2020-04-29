@@ -35,6 +35,21 @@ TEST(PracticeTest, a_palindrome)
     ASSERT_TRUE(actual);
 }
 
+TEST(PracticeTest, a_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("#$#");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, a_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome(" ");
+    ASSERT_FALSE(actual);
+}
+
+
 TEST(PracticeTest, is_lessthan)
 {
     Practice obj;
@@ -51,17 +66,16 @@ TEST(PracticeTest, is_greaterthan)
     ASSERT_GT(3,2);
 }
 
-TEST(PracticeTest, sort_desc_one)
+TEST(PracticeTest, sort_desc)
 {
     Practice obj;
-    int temp;
     int first = 1;
     int second = 2;
     int thrid = 3;
     obj.sortDescending(first, second, thrid);
 }
 
-TEST(PracticeTest, sort_desc_two)
+TEST(PracticeTest, same_num)
 {
     Practice obj;
     int temp;
@@ -69,41 +83,17 @@ TEST(PracticeTest, sort_desc_two)
     int second = 3;
     int thrid = 3;
     obj.sortDescending(first, second, thrid);
-    // ASSERT_LT(first, thrid);
-    // temp = first;
-    // ASSERT_EQ(temp, first);
-    // first = thrid;
-    // ASSERT_EQ(first, thrid);
-    // thrid = temp;
-    // ASSERT_EQ(thrid, temp);
 }
 
-// TEST(PracticeTest, is_equaltwo)
-// {
-//     Practice obj;
-//     int temp;
-//     int first = 1;
-//     int second = 2;
-//     int thrid = 3;
-//     obj.sortDescending(first, second, thrid);
-//     ASSERT_LT(second, thrid);
-//     temp = second;
-//     ASSERT_EQ(temp, second);
-//     second = thrid;
-//     ASSERT_EQ(second, thrid);
-//     thrid = temp;
-//     ASSERT_EQ(thrid, temp);
-// }
-
-// TEST(PracticeTest, is_equalthree)
-// {
-//     // Practice obj;
-//     // int first = 2;
-//     // int second = 1;
-//     // int thrid = 3;
-//     // obj.sortDescending(first, second, thrid);
-
-// }
+TEST(PracticeTest, zero_num)
+{
+    Practice obj;
+    int temp;
+    int first = 0;
+    int second = 0;
+    int thrid = 3;
+    obj.sortDescending(first, second, thrid);
+}
 
 
 TEST(PracticeTest, negativeintegers)

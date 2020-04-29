@@ -19,12 +19,12 @@ void Practice::sortDescending(int first, int second, int third)
     second = third;
     third = temp;
   }
-  if( first < third )
-  {
-    int temp = first;
-    first = third;
-    third = temp;
-  }
+  // if( first < third )
+  // {
+  //   int temp = first;
+  //   first = third;
+  //   third = temp;
+  // }
 }
 
 // Receive a string and return whether or not it is strictly a palindrome,
