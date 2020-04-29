@@ -42,7 +42,7 @@ TEST(PracticeTest, a_palindrome)
     ASSERT_TRUE(actual);
 }
 
-TEST(PracticeTest, a_palindrome)
+TEST(PracticeTest, empty_string)
 {
     Practice obj;
     bool actual = obj.isPalindrome(" ");
@@ -78,7 +78,6 @@ TEST(PracticeTest, sort_desc)
 TEST(PracticeTest, same_num)
 {
     Practice obj;
-    int temp;
     int first = 3;
     int second = 3;
     int thrid = 3;
@@ -88,7 +87,6 @@ TEST(PracticeTest, same_num)
 TEST(PracticeTest, zero_num)
 {
     Practice obj;
-    int temp;
     int first = 0;
     int second = 0;
     int thrid = 3;
